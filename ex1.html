@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#5-JavaScript</title>
+  </head>
+  <body>
+    <h1><a href="ex2.html"></a>WEB</h1>
+    <input
+      id="night__day"
+      type="button"
+      value="night"
+      onclick="
+    if(document.querySelector('#night__day').value === 'night'){
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        document.querySelector('#night__day').value = 'day';
+    } else {
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+        document.querySelector('#night__day').value = 'night';
+    }    
+    "
+    />
+    <h3>JavaScript</h3>
+  </body>
+</html>
