@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#6-JavaScript</title>
+  </head>
+  <body>
+    <h1><a href="ex1.html"></a>WEB</h1>
+    <input
+      type="button"
+      value="night"
+      onclick="
+      var target = document.querySelector('body');
+  if(this.value === 'night'){
+         target.style.backgroundColor = 'black';
+         target.style.color = 'white';
+         this.value = 'day'; 
+    } else {
+         target.style.backgroundColor = 'white';
+         target.style.color = 'black';
+         this.value = 'night'; } "
+    />
+    <h3>JavaScript</h3>
+    <p>
+      JavaScript is the Programming Language for the Web. JavaScript can update
+      and change both HTML and CSS. JavaScript can calculate, manipulate and
+      validate data.
+    </p>
+  </body>
+</html>
