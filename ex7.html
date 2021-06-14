@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#6-JavaScript</title>
+    <script>
+      function nightDayHandler(self){
+        var target = document.querySelector('body');
+          if(self.value === 'night'){
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        self.value = 'day'; 
+
+        var alist = document.querySelectorAll('a');
+         var i = 0;
+        while(i < alist.length){
+             alist[i].style.color='powderblue';
+             i = i+ 1;
+                }
+            
+        } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            self.value = 'night'; 
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+             while(i < alist.length){
+                 alist[i].style.color='blue';
+                 i = i+ 1;
+                }
+              }
+            }
+    </script>
+  </head>
+  <body>
+    <h1><a href="ex2.html" style="color: blue;">WEB</a></h1>
+    <input type="button" value="night" onclick="
+      nightDayHandler(this)
+         ">
+    <input type="button" value="night" onclick="
+      nightDayHandler(this)
+            ">
+    <h3>JavaScript</h3>
+    <p>
+      JavaScript is the Programming Language for the Web. JavaScript can update
+      and change both HTML and CSS. JavaScript can calculate, manipulate and
+      validate data.
+      <h2>1.<a href="ex1.html"style="color: blue;">HTML</a></h2>
+      <h2>2.<a href="ex1.html"style="color: blue;">CSS</a></h2>
+      <h2>3.<a href="ex1.html"style="color: blue;">JavaScript</a></h2>
+    </p>
+  </body>
+</html>
