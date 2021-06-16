@@ -27,5 +27,14 @@
         document.write(key + " : " + cowokers[key] + "<br>");
       }
     </script>
+    <h2>Property & Method</h2>
+    <script>
+      cowokers.showAll = function () {
+        for (var key in this) {
+          document.write(key + " : " + this[key] + "<br>");
+        }
+      };
+      cowokers.showAll();
+    </script>
   </body>
 </html>
